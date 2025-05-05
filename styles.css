@@ -8,9 +8,14 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
+.joke-section,
+.joke-section > h2 {
+  font-family: "Caveat", cursive;
+}
+
 #my-intro {
   width: 60%;
-  line-height: 1.6; /* optional: improves readability */
+  line-height: 1.6;
 }
 
 .school-icons {
@@ -61,5 +66,9 @@ section {
 }
 
 footer {
+  margin-top: 2rem;
+}
+
+hr {
   margin-top: 2rem;
 }

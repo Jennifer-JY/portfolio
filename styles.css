@@ -1,3 +1,18 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+#my-intro {
+  width: 60%;
+  line-height: 1.6; /* optional: improves readability */
+}
+
 .school-icons {
   width: 55px;
   height: 25px;
@@ -26,10 +41,25 @@
   border-radius: 6px;
 }
 
-header {
-  padding: 1rem;
+body {
+  padding: 1rem 12rem;
 }
 
-main {
-  padding: 1rem;
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
 }

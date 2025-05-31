@@ -13,6 +13,15 @@ h3 {
   font-family: "Caveat", cursive;
 }
 
+.joke-section > div,
+#joke-display {
+  font-size: large;
+}
+
+#joke-display {
+  white-space: pre-line;
+}
+
 #my-intro {
   width: 60%;
   line-height: 1.6;
@@ -44,6 +53,12 @@ h3 {
   background-color: #eee;
   margin-bottom: 0.75rem;
   border-radius: 6px;
+  padding: 4px;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -71,4 +86,12 @@ footer {
 
 hr {
   margin-top: 2rem;
+}
+
+button {
+  margin-top: 5px;
+}
+
+li {
+  margin-bottom: 0.5rem; /* or 8px */
 }

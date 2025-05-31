@@ -33,8 +33,9 @@
           tools.
         </p>
         <div>
+          📧
           <a target="_blank" href="mailto: yujiayue921@outlook.com"
-            >📧 Email me:</a
+            >Email me:</a
           >
           yujiayue921@outlook.com
         </div>
@@ -45,7 +46,8 @@
       <section class="joke-section">
         <h2>Before more info… a little fun?</h2>
         <div>Fancy a random joke?</div>
-        <button>click me!</button>
+        <button id="joke-button">click me!</button>
+        <p id="joke-display"></p>
       </section>
       <hr />
       <section>
@@ -64,25 +66,64 @@
         </div>
       </section>
       <section>
+        <h2>Tech Stack</h2>
+        <p>Here are some tools and technologies I've worked with recently:</p>
+        <ul class="tech-stack">
+          <li>🧠 Languages: TypeScript, JavaScript, SQL, Python, Java</li>
+          <li>🧱 Markup & Styling: HTML, CSS, Tailwind</li>
+          <li>⚙️ Frameworks & Libraries: Next.js, React, Tailwind, CSS</li>
+          <li>🗄️ Databases: PostgreSQL, Prisma ORM</li>
+          <li>🔐 Auth & APIs: Auth.js, REST, Stripe API</li>
+          <li>🛠 Tools: Git, GitHub, Vercel, VSCode</li>
+        </ul>
+      </section>
+      <section>
         <h2>Personal Projects</h2>
         <div class="project-grid">
           <div class="project-card">
-            <h3>Plan View - a calendar app</h3>
-            <div class="project-thumbnail"></div>
+            <h3>PlanView - a calendar app</h3>
+            <div class="project-thumbnail">
+              <img src="./public/demo.png" alt="Plan View demo" />
+            </div>
+            <p>🛠 Next.js, TypeScript, Tiptap, Prisma, PostgreSQL</p>
             <p>
-              Managing tasks by week can get messy. This planner helps you
-              clearly see what needs to be done — week by week, on your terms —
-              all in one simple calendar view.
+              🗓 Helps users organize monthly tasks with clean UI and rich text
+              support.
             </p>
+            <div>
+              <a href="https://github.com/Jennifer-JY/planner" target="_blank"
+                ><strong>Github Repo</strong></a
+              >
+            </div>
+            <div>
+              <a
+                href="https://planner-drab-two.vercel.app/calendar"
+                target="_blank"
+                ><strong>Live Demo (hosted on Vercel)</strong></a
+              >
+            </div>
           </div>
           <div class="project-card">
-            <h3>Plan View - a calendar app</h3>
-            <div class="project-thumbnail"></div>
+            <h3>Bookdrop - a bookstore app</h3>
+            <div class="project-thumbnail">
+              <img src="./public/demo-bookstore.png" alt="Plan View demo" />
+            </div>
+            <p>🛠 Next.js, TypeScript, Tailwind, PostgreSQL, Stripe</p>
             <p>
-              Managing tasks by week can get messy. This planner helps you
-              clearly see what needs to be done — week by week, on your terms —
-              all in one simple calendar view.
+              📚 An online bookstore interface that allows users to browse,
+              search, and explore books by category. Designed with a clean UI
+              and responsive layout.
             </p>
+            <div>
+              <a href="https://github.com/Jennifer-JY/bookstore" target="_blank"
+                ><strong>Github Repo</strong></a
+              >
+            </div>
+            <div>
+              <a href="https://bookstore-theta-one.vercel.app/" target="_blank"
+                ><strong>Live Demo (hosted on Vercel)</strong></a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -96,4 +137,26 @@
       </p>
     </footer>
   </body>
+  <script>
+    const jokeBtn = document.querySelector("#joke-button");
+    const jokeDsp = document.querySelector("#joke-display");
+    jokeBtn.addEventListener("click", async () => {
+      jokeDsp.textContent = "Fetching...";
+      try {
+        const res = await fetch(
+          "https://sv443.net/jokeapi/v2/joke/Programming"
+        );
+        const data = await res.json();
+        console.log(data);
+        if (data.error) {
+          jokeDsp.textContent = "Oops, couldn't fetch a joke right now!";
+        } else {
+          jokeDsp.textContent = data?.joke || `${data.setup}\n${data.delivery}`;
+        }
+      } catch (err) {
+        jokeDsp.textContent = "Failed to fetch a joke. Please try again.";
+        console.error(err);
+      }
+    });
+  </script>
 </html>

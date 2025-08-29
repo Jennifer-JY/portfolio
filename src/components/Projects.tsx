@@ -4,7 +4,10 @@ import { ProjectCard } from "./ProjectCard";
 export function Projects() {
   return (
     <>
-      <h2 className="flex items-center text-3xl font-extrabold leading-none mb-4">
+      <h2
+        className="flex items-center text-3xl font-extrabold leading-none mb-4"
+        aria-label="projects"
+      >
         <span className="text-[#F06543]">Pro</span>
         <span className="text-gray-800">jects</span>
       </h2>

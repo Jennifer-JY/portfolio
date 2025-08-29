@@ -34,19 +34,22 @@ export function ProjectCard({
         className="group relative w-full rounded-2xl border border-gray-200/70 bg-white/80 p-5 shadow-sm transition 
                  hover:-translate-y-0.5 hover:shadow-md focus-within:ring-2 focus-within:ring-[#4A90E2]/50"
       >
-        <div className="space-y-3">
+        <div className="space-y-3" aria-label="dates">
           <time className="flex items-center justify-between text-sm text-gray-500">
             {date}
           </time>
 
-          <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+          <h2
+            className="text-xl font-semibold tracking-tight text-gray-900"
+            aria-label="project name"
+          >
             {title}
           </h2>
 
           <h3 className="italic text-gray-400">{role}</h3>
 
           {!!techStack?.length && (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2" aria-label="stack">
               {techStack.map((t) => (
                 <ToolCard key={t} toolName={t} />
               ))}

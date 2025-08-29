@@ -5,7 +5,7 @@ export function Header() {
   return (
     <div className="flex flex-row justify-between items-center">
       <a>
-        <a href="/" aria-label="Home">
+        <a href="https://jennifer-jy.github.io/portfolio/" aria-label="Home">
           <FcHome size={30} className="shrink-0" />
         </a>
       </a>

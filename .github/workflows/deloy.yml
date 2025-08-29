@@ -2,7 +2,6 @@ name: Deploy React to GitHub Pages
 on:
   push:
     branches: [main] # deploy after merge to main
-  pull_request: {} # <- add this if you want PR preview URLs
 
 permissions:
   contents: read

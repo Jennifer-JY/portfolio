@@ -6,7 +6,7 @@ export const projects: ProjectCardProps[] = [
     date: "Jun. 2025 ‑ Aug. 2025",
     role: "Software Developer/Engineer",
     description:
-      "Built a client-facing wallet & bill-payments web app in a 6-person Agile team. Implemented KYC, unified one-off/recurring/scheduled payments with reminders and monthly-limit alerts, containerised the stack, and added tests/SQL procedures.",
+      "Built a client-facing wallet & bill-payments web app in a 6-person Agile team. Implemented KYC, unified one-off/recurring/scheduled payments with reminders and monthly-limit alerts, Dockerised the stack, added jest tests and wrote SQL functions and tests.",
     techStack: [
       "React",
       "Typescript",
@@ -14,6 +14,7 @@ export const projects: ProjectCardProps[] = [
       "Tailwind",
       "PostgresSQL",
       "Firebase Authentication",
+      "Docker",
     ],
   },
   {
@@ -24,7 +25,6 @@ export const projects: ProjectCardProps[] = [
       "A full‑stack calendar and todo application featuring a unique month‑plan view for organizing tasks, with rich‑text editing and authentication.",
     vercelLink: "https://planner-drab-two.vercel.app/",
     githubRepoLink: "https://github.com/Jennifer-JY/planner",
-    imgRef: "/demo-planview.png",
     techStack: [
       "Next js",
       "Typescript",
@@ -43,7 +43,6 @@ export const projects: ProjectCardProps[] = [
       "Online bookstore with catalog browsing, cart, and order flow. Stripe webhooks confirm payments before orders are marked Paid. Authenticated sessions.",
     vercelLink: "https://bookstore-theta-one.vercel.app/",
     githubRepoLink: "https://github.com/Jennifer-JY/bookstore",
-    imgRef: "/demo-bookstore.png",
     techStack: [
       "Next js",
       "Typescript",

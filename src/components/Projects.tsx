@@ -8,7 +8,7 @@ export function Projects() {
         <span className="text-[#F06543]">Pro</span>
         <span className="text-gray-800">jects</span>
       </h2>
-      <div className="flex flex-col gap-y-16">
+      <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
         {projects.map((p, i) => (
           <ProjectCard key={i} {...p} />
         ))}

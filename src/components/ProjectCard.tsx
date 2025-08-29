@@ -54,7 +54,11 @@ export function ProjectCard({
       </section>
 
       {imgRef && (
-        <img src={imgRef} alt="demo" className="w-1/3 h-auto rounded-md" />
+        <img
+          src={"/portfolio/" + imgRef}
+          alt="demo"
+          className="w-1/3 h-auto rounded-md"
+        />
       )}
     </article>
   );

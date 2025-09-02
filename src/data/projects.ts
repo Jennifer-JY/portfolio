@@ -10,7 +10,8 @@ export const projects: ProjectCardProps[] = [
     techStack: [
       "React",
       "Typescript",
-      "Express js",
+      "Node.js",
+      "Express.js",
       "Tailwind",
       "PostgresSQL",
       "Firebase Authentication",
@@ -26,7 +27,7 @@ export const projects: ProjectCardProps[] = [
     vercelLink: "https://planner-drab-two.vercel.app/",
     githubRepoLink: "https://github.com/Jennifer-JY/planner",
     techStack: [
-      "Next js",
+      "Next.js",
       "Typescript",
       "Tailwind",
       "Prisma",
@@ -44,7 +45,7 @@ export const projects: ProjectCardProps[] = [
     vercelLink: "https://bookstore-theta-one.vercel.app/",
     githubRepoLink: "https://github.com/Jennifer-JY/bookstore",
     techStack: [
-      "Next js",
+      "Next.js",
       "Typescript",
       "Tailwind",
       "PostgresSQL",

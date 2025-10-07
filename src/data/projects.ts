@@ -6,7 +6,7 @@ export const projects: ProjectCardProps[] = [
     date: "Jun. 2025 ‑ Aug. 2025",
     role: "Software Developer/Engineer",
     description:
-      "Built a client-facing wallet & bill-payments web app in a 6-person Agile team. Implemented KYC, unified one-off/recurring/scheduled payments with reminders and monthly-limit alerts, Dockerised the stack, added jest tests and wrote SQL functions and tests.",
+      "Built a client-facing wallet & bill-payments web app in a 6-person Agile team. Implemented KYC, unified one-off/recurring/scheduled payments with reminders and monthly-limit alerts, Dockerised the stack, added jest tests and wrote SQL functions and tests. Scored 91.",
     techStack: [
       "React",
       "Typescript",

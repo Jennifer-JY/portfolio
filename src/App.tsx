@@ -1,20 +1,22 @@
-import { Education } from "./components/Education";
-import Footer from "./components/Footer";
-import { Header } from "./components/Header";
-import { Intro } from "./components/Intro";
-import { Projects } from "./components/Projects";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import Layout from "./components/Layout";
+import { BlogLayout } from "./components/Blog/Layout";
+import { BlogIntro } from "./components/Blog/Intro";
+import { Javascript } from "./components/Blog/Javascript";
 
 function App() {
   return (
     <>
-      <div className="my-4 mx-11  p-10">
-        <Header />
-        <Intro />
-        <Education />
-        <Projects />
-        <br />
-        <Footer />
-      </div>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blog" element={<BlogLayout />}>
+            <Route index element={<BlogIntro />} />
+            <Route path="js" element={<Javascript />} />
+          </Route>
+        </Route>
+      </Routes>
     </>
   );
 }
